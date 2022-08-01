@@ -108,7 +108,6 @@ header {
     height: 10vh;
     background-color: #000000;
     @media (max-width: 999px) {
-      position: fixed;
       width: 95%;
       justify-content: flex-start;
       column-gap: 5%;

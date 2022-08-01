@@ -132,6 +132,10 @@
         width: 320px;
         border-radius: 50%;
         border: 8px solid $primary;
+
+        @media (max-width: 999px) {
+          width: 250px;
+        }
       }
     }
     .apresentation-text {

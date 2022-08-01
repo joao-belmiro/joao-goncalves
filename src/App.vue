@@ -121,7 +121,10 @@ header {
       text-transform: uppercase;
       text-decoration: none;
       color: $background;
-
+      @media (max-width: 999px) {
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
       &:hover {
         opacity: 0.7;
       }

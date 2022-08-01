@@ -81,7 +81,8 @@ export default {
     align-items: flex-start;
   }
   .title {
-    display: block;
+    width: 80%;
+    box-sizing: border-box;
     border-left: 10px solid $primary ;
     padding-left: 16px;
   }

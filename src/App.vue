@@ -63,7 +63,6 @@ export default {
     handleScroll () {
       const menu = document.getElementById('menu')
       const screen = window.innerWidth
-      console.log(screen)
       if (window.scrollY > 90 && screen < 999) {
         menu.style.position = 'fixed'
         menu.style.zIndex = '1'
@@ -164,7 +163,7 @@ header {
         position: absolute;
         top: 10vh;
         left: 0;
-        width: 40%;
+        width: 50%;
         height: calc(100vh - 8vh);
         background: #000000;
         flex-direction: column;

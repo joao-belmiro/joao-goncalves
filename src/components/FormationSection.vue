@@ -30,6 +30,8 @@ export default {}
       width: 100%;
     }
     .title {
+        width: 80%;
+        box-sizing: border-box;
         border-left: 10px solid $primary ;
         padding-left: 16px;
         text-align: start;

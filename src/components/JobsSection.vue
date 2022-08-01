@@ -102,6 +102,9 @@ export default {
         align-items: flex-start;
     }
     h1 {
+        width: 80%;
+        box-sizing: border-box;
+        text-align: start;
         border-left: 10px solid $primary ;
         padding-left: 16px;
         margin-bottom: 32px;

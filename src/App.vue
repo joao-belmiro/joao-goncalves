@@ -165,7 +165,7 @@ header {
         position: absolute;
         top: 10vh;
         left: 0;
-        width: 50%;
+        width: 60%;
         height: calc(100vh - 8vh);
         background: #000000;
         flex-direction: column;
@@ -179,10 +179,11 @@ header {
         letter-spacing: 3px;
         margin-left: 32px;
         @media (max-width: 999px) {
-          margin-left: 12px;
+          margin-left: 0;
         }
 
         a {
+          text-align: center;
           position: relative;
           text-decoration: none;
           color: $background;

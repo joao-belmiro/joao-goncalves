@@ -49,7 +49,7 @@
           <p>
             Comecei não gostando de programação devido as más Experiencias na faculdade,
             bem como a desmotivação devido a problemas Pessoais,
-            no entanto com o desenjo de sair da minha zona de conforto no final de 2019,
+            no entanto com o desejo de sair da minha zona de conforto no final de 2019,
             decidi estudar java, pois era uma linguagem que seria usada na faculdade,
             esses estudos me levou da minha primeira vaga de estágio em programação até onde estou <span>agora.</span>
           </p>

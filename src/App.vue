@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <nav>
+      <nav id="menu">
         <div @click="clickMenu" class="mobile-menu">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -9,10 +9,10 @@
         </div>
         <a class="logo" href="/"><span>/*</span> joão carlos <span>*/</span></a>
         <ul class="nav-list">
-          <li><a href="#apresentation">Sobre</a></li>
-          <li><a href="#jobs">Experiências</a></li>
-          <li><a href="#projects">Projetos Pessoais</a></li>
-          <li><a href="#formation">Formação</a></li>
+          <li><a @click="clickMenu" href="#apresentation">Sobre</a></li>
+          <li><a @click="clickMenu" href="#jobs">Experiências</a></li>
+          <li><a @click="clickMenu" href="#projects">Projetos Pessoais</a></li>
+          <li><a @click="clickMenu" href="#formation">Formação</a></li>
         </ul>
       </nav>
     </header>
@@ -53,15 +53,40 @@ export default {
       active: 'active'
     }
   },
+  created () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
   methods: {
+    handleScroll () {
+      const menu = document.getElementById('menu')
+      const screen = window.innerWidth
+      console.log(screen)
+      if (window.scrollY > 90 && screen < 999) {
+        menu.style.position = 'fixed'
+        menu.style.zIndex = '1'
+      } else {
+        menu.style.position = 'relative'
+      }
+    },
     clickMenu () {
       const nav = document.querySelector('.nav-list')
-      nav.classList.toggle(this.active)
+      if (!nav.classList.contains(this.active)) {
+        nav.classList.toggle(this.active)
+      } else {
+        nav.classList.remove(this.active)
+      }
     }
   }
 }
 </script>
 <style lang="scss">
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20vh;
+}
 * {
   margin: 0;
   padding: 0;
@@ -75,13 +100,22 @@ body {
   font-family: $global-font;
 }
 header {
+  width: 100%;
   nav {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 10vh;
+    height: 10vh;
     background-color: #000000;
-
+    @media (max-width: 999px) {
+      position: fixed;
+      width: 95%;
+      justify-content: flex-start;
+      column-gap: 5%;
+      padding-left: 5%;
+      z-index: 1;
+    }
     .logo {
       font-size: 22px;
       letter-spacing: 4px;
@@ -126,16 +160,15 @@ header {
       display: flex;
       list-style: none;
 
-      @media (max-width: 900px) {
-        padding: 50px 0;
+      @media (max-width: 999px) {
         position: absolute;
         top: 10vh;
         left: 0;
-        width: 100%;
-        height: 85vh;
+        width: 40%;
+        height: calc(100vh - 8vh);
         background: #000000;
         flex-direction: column;
-        row-gap: 100px;
+        justify-content: space-around;
         align-items: center;
         transform: translateX(-100%);
         transition: 0.5s ease-in;

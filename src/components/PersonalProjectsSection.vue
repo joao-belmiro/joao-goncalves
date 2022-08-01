@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="personal-projects">
-    <h1>Projetos Pessoais</h1>
+    <h1 class="title">Projetos Pessoais</h1>
 
     <div v-for="project in projects" :key="project.id" class="card-projects">
       <img :src="project.image" alt="" />
@@ -74,12 +74,17 @@ export default {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  @media (max-width: 500px) {
+  @media (max-width: 999px) {
     margin: 0 16px;
+    align-items: flex-start;
   }
-
+  .title {
+    display: block;
+    border-left: 10px solid $primary ;
+    padding-left: 16px;
+  }
   h1 {
     font-size: 32px;
   }
@@ -91,7 +96,7 @@ export default {
     border-radius: 4px;
     border: 1px solid $dark;
     box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 1);
-    @media (max-width: 500px) {
+    @media (max-width: 999px) {
       width: 100%;
       flex-direction: column;
     }
@@ -100,10 +105,14 @@ export default {
       border-radius: 6px;
       width: 35%;
       height: 250px;
-      @media (max-width: 500px) {
+      @media (max-width: 999px) {
         border-radius: 4px 4px 0px 0px;
         margin: 0;
+        height: 450px;
         width: 100%;
+      }
+      @media (max-width: 768px) {
+        height: 300px;
       }
     }
     .infos-container {
@@ -123,7 +132,7 @@ export default {
         letter-spacing: 2px;
         margin-bottom: 10px;
         text-align: justify;
-         @media (max-width: 500px) {
+         @media (max-width: 999px) {
             letter-spacing: 1px;
             text-align: none;
          }

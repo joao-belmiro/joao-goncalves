@@ -21,16 +21,18 @@ export default {}
   flex-direction: row;
   justify-content: center;
   padding-bottom: 32px;
-  @media (max-width: 500px) {
+  @media (max-width: 999px) {
     margin: 0 16px;
   }
   div {
     width: 80%;
-    @media (max-width: 500px) {
+    @media (max-width: 999px) {
       width: 100%;
     }
     .title {
-        text-align: center;
+        border-left: 10px solid $primary ;
+        padding-left: 16px;
+        text-align: start;
         margin-bottom: 32px;
         font-size: 32px;
     }
@@ -39,12 +41,12 @@ export default {}
       font-weight: 650;
       letter-spacing: 3px;
       margin-bottom: 16px;
-         @media (max-width: 500px) {
+         @media (max-width: 999px) {
           font-size: 24px;
         }
     }
     h2 {
-         @media (max-width: 500px) {
+         @media (max-width: 999px) {
           font-size: 18px;
         }
     }
@@ -52,7 +54,7 @@ export default {}
         letter-spacing: 2px;
         font-weight: 550;
         font-size: 18px;
-           @media (max-width: 500px) {
+           @media (max-width: 999px) {
             text-align: justify;
           font-size: 14px;
         }

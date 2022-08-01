@@ -29,7 +29,7 @@
             >
             <a
               class="curriculo"
-              href="@/assets/documents/curriculo.pdf"
+              href="https://docs.google.com/uc?export=download&id=1ofcqJCdikwnee2DFbGw6FL4kNdEkRj63"
               download
             >
               <img
@@ -72,7 +72,7 @@
       align-items: center;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 999px) {
         margin: 0px 16px;
     }
 
@@ -136,11 +136,7 @@
     }
     .apresentation-text {
       width: 40%;
-
-      @media (max-width: 900px) {
-        width: 80%;
-      }
-      @media (max-width: 500px) {
+      @media (max-width: 999px) {
         width: 100%;
       }
       h1 {

@@ -97,14 +97,16 @@ export default {
     justify-content: flex-start;
     align-items: center;
 
-    @media (max-width: 500px) {
+    @media (max-width: 999px) {
         margin: 0 16px;
+        align-items: flex-start;
     }
     h1 {
+        border-left: 10px solid $primary ;
+        padding-left: 16px;
         margin-bottom: 32px;
         font-size: 32px;
-        @media (max-width: 500px) {
-            font-size: 22px;
+        @media (max-width: 999px) {
         }
     }
 
@@ -171,7 +173,7 @@ export default {
         }
         width: 80%;
         margin-bottom: 32px;
-        @media (max-width: 500px) {
+        @media (max-width: 999px) {
             width: 100%;
         }
     }

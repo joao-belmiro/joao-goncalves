@@ -18,6 +18,7 @@
     </header>
     <main>
       <Apresentation-section/>
+      <Stacks-list-section/>
       <Jobs-section/>
       <Personal-projects-section/>
       <Formation-section/>
@@ -41,12 +42,14 @@ import ApresentationSection from './components/ApresentationSection.vue'
 import JobsSection from './components/JobsSection.vue'
 import PersonalProjectsSection from './components/PersonalProjectsSection.vue'
 import FormationSection from './components/FormationSection.vue'
+import StacksListSection from './components/StacksListSection.vue'
 export default {
   components: {
     ApresentationSection,
     JobsSection,
     PersonalProjectsSection,
-    FormationSection
+    FormationSection,
+    StacksListSection
   },
   data () {
     return {

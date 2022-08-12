@@ -7,6 +7,7 @@
         <div class="cover">
           <div class="list-stacks">
             <div v-for="stack in stacks" :key="stack.alt" class="tech-card">
+              <p>{{stack.name}}</p>
               <img :src="stack.img" :alt="stack.alt" />
             </div>
           </div>
@@ -24,43 +25,53 @@ export default {
       stacks: [
         {
           img: require('@/assets/stacks/nuxt.svg'),
-          alt: 'nuxt stack'
+          alt: 'nuxt stack',
+          name: 'Nuxt.js'
         },
         {
           img: require('@/assets/stacks/vue.svg'),
-          alt: 'vue stack'
+          alt: 'vue stack',
+          name: 'Vue.js'
         },
         {
           img: require('@/assets/stacks/javaScript.svg'),
-          alt: 'javaScript stack'
+          alt: 'javaScript stack',
+          name: 'javaScript'
         },
         {
           img: require('@/assets/stacks/css.svg'),
-          alt: 'css stack'
+          alt: 'css stack',
+          name: 'CSS3'
         },
         {
           img: require('@/assets/stacks/html5.svg'),
-          alt: 'html5 stack'
+          alt: 'html5 stack',
+          name: 'HTML5'
         },
         {
           img: require('@/assets/stacks/git.svg'),
-          alt: 'git stack'
+          alt: 'git stack',
+          name: 'Git'
         },
         {
           img: require('@/assets/stacks/gitlab.svg'),
-          alt: 'gitlab stack'
+          alt: 'gitlab stack',
+          name: 'GitLab'
         },
         {
           img: require('@/assets/stacks/github.svg'),
-          alt: 'github stack'
+          alt: 'github stack',
+          name: 'GitHub'
         },
         {
           img: require('@/assets/stacks/sass.svg'),
-          alt: 'sass stack'
+          alt: 'sass stack',
+          name: 'SASS'
         },
         {
           img: require('@/assets/stacks/eslint.svg'),
-          alt: 'eslint stack'
+          alt: 'eslint stack',
+          name: 'ESLint'
         }
       ]
     }
@@ -130,7 +141,10 @@ export default {
       }
       .cover {
         position: relative;
-        width: 75%;
+        width: 88%;
+        @media (max-width: 999px) {
+          width: 75%;
+        }
         .list-stacks {
           scroll-behavior: smooth;
           width: 100%;
@@ -142,18 +156,38 @@ export default {
           height: 250px;
           position: relative;
           .tech-card {
-            padding: 32px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 0px 32px 32px 32px;
             border-radius: 9px;
             border: 2px solid $dark;
             display: flex;
             align-items: center;
-            height: 130px;
+            justify-content: center;
+            height: 150px;
             transition: transform 1s;
 
             &:hover {
               transform: scale(1.2);
               cursor: pointer;
               border: 2px solid $primary;
+            }
+            p {
+              padding: 16px 0 10px 0;
+              display: block;
+              position: relative;
+              line-height: 32px;
+              font-weight: 600;
+              opacity: 0;
+            }
+
+            &:hover p {
+              opacity: 1;
+              transition: opacity 1s;
+            }
+            img {
+              position: relative;
             }
           }
         }

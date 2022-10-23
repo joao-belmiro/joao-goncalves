@@ -131,7 +131,7 @@ export default {
 
       p {
         letter-spacing: 2px;
-        margin-bottom: 10px;
+        margin-bottom: 32px;
         text-align: justify;
          @media (max-width: 999px) {
             letter-spacing: 1px;
@@ -149,14 +149,16 @@ export default {
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 600;
-
+        padding: 8px;
+          border: 1px solid $primary;
+          border-radius: 6px;
         &:hover {
           opacity: 0.7;
         }
       }
     }
     .techs-container {
-      margin-top: 16px;
+      margin-top: 32px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;

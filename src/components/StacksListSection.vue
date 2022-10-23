@@ -3,7 +3,7 @@
     <div class="container">
       <h1>Tecnolgias Estudadas</h1>
       <div class="line-scroll">
-        <button @click="scrollBy(-300,0)" class="prev-btn">&#10094;</button>
+        <button @click="scrollBy(-200,0)" class="prev-btn">&#10094;</button>
         <div class="cover">
           <div class="list-stacks">
             <div v-for="stack in stacks" :key="stack.alt" class="tech-card">
@@ -12,7 +12,7 @@
             </div>
           </div>
         </div>
-        <button @click="scrollBy(300,0)" class="next-btn">&#10095; </button>
+        <button @click="scrollBy(200,0)" class="next-btn">&#10095;</button>
       </div>
     </div>
   </section>
@@ -114,7 +114,7 @@ export default {
         border: none;
         border-radius: 50%;
         font-size: 25px;
-        font-weight: 600;
+        font-weight: 700;
         display: block;
         background-color: $background;
         width: 50px;
@@ -122,9 +122,12 @@ export default {
         color: $primary;
         text-align: center;
         color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
          @media (max-width: 999px) {
-          width: 30px;
-          height: 30px;
+          width: 40px;
+          height: 40px;
           font-size: 20px;
         }
       }
@@ -142,9 +145,6 @@ export default {
       .cover {
         position: relative;
         width: 88%;
-        @media (max-width: 999px) {
-          width: 75%;
-        }
         .list-stacks {
           scroll-behavior: smooth;
           width: 100%;
@@ -168,6 +168,12 @@ export default {
             height: 150px;
             transition: transform 1s;
 
+            &:first-child {
+              margin-left: 16px;
+            }
+            &:last-child {
+              margin-right: 16px;
+            }
             &:hover {
               transform: scale(1.2);
               cursor: pointer;

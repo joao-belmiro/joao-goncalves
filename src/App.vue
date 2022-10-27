@@ -56,23 +56,7 @@ export default {
       active: 'active'
     }
   },
-  created () {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
   methods: {
-    handleScroll () {
-      const menu = document.getElementById('menu')
-      const screen = window.innerWidth
-      if (window.scrollY > 90 && screen < 999) {
-        menu.style.position = 'fixed'
-        menu.style.zIndex = '1'
-      } else {
-        menu.style.position = 'relative'
-      }
-    },
     clickMenu () {
       const nav = document.querySelector('.nav-list')
       if (!nav.classList.contains(this.active)) {
@@ -103,6 +87,11 @@ body {
 }
 header {
   width: 100%;
+  @media (max-width: 999px) {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+  }
   nav {
     width: 100%;
     display: flex;

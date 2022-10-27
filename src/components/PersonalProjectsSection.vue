@@ -7,16 +7,17 @@
       <div class="infos-container">
         <h1>{{ project.title }}</h1>
         <p>{{ project.description }}</p>
-        <a
-          class="link-space"
+        <div class="d-links">
+          <a
           :href="project.link"
           target="_blank"
           rel="noopener noreferrer"
           >Ver projeto</a
-        >
-        <a :href="project.repo" target="_blank" rel="noopener noreferrer"
+          >
+          <a :href="project.repo" target="_blank" rel="noopener noreferrer"
           >Ver Repositório</a
-        >
+          >
+        </div>
         <div class="techs-container">
           <span class="badge" v-for="tech in project.techs" :key="tech">{{
             tech
@@ -32,6 +33,26 @@ export default {
   data () {
     return {
       projects: [
+        {
+          id: 5,
+          image: require('@/assets/photos/dash-crm.png'),
+          title: 'Dashboard Crm',
+          link: 'https://dash-crm.netlify.app/',
+          repo: 'https://github.com/joao-belmiro/crm-admin',
+          description:
+            'Dashboard com formulários e componentes autorais inspirados no material design, possui responsividade e menu lateral funcional',
+          techs: ['Vue.js', 'javaScript', 'Git', 'HTML5', 'SASS']
+        },
+        {
+          id: 4,
+          image: require('@/assets/photos/my-notes.png'),
+          title: 'Minha Agenda',
+          link: 'https://free-notes.netlify.app',
+          repo: 'https://github.com/joao-belmiro/my-notes',
+          description:
+            'Aplicação para a criação de notas com editor de texto embutido com salvamento de dados locais com indexeddb',
+          techs: ['Vue.js', 'javaScript', 'Git', 'HTML5', 'SASS', 'indexeddb']
+        },
         {
           id: 3,
           image: require('@/assets/photos/crud-firebase.jpg'),
@@ -138,9 +159,12 @@ export default {
             text-align: none;
          }
       }
-
-      .link-space {
-        margin-right: 16px;
+      .d-links {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: flex-start;
+        align-items: center;
       }
       a {
         text-decoration: none;

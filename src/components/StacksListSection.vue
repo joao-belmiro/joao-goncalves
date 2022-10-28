@@ -44,6 +44,11 @@ export default {
           name: 'CSS3'
         },
         {
+          img: require('@/assets/stacks/sass.svg'),
+          alt: 'sass stack',
+          name: 'SASS'
+        },
+        {
           img: require('@/assets/stacks/html5.svg'),
           alt: 'html5 stack',
           name: 'HTML5'
@@ -62,11 +67,6 @@ export default {
           img: require('@/assets/stacks/github.svg'),
           alt: 'github stack',
           name: 'GitHub'
-        },
-        {
-          img: require('@/assets/stacks/sass.svg'),
-          alt: 'sass stack',
-          name: 'SASS'
         },
         {
           img: require('@/assets/stacks/eslint.svg'),

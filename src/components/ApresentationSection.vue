@@ -18,7 +18,7 @@
             <a
               class="link linkedin"
               target="_blank"
-              href="https://www.linkedin.com/in/jo%C3%A3o-gon%C3%A7alves-294300191/"
+              href="https://www.linkedin.com/in/jo%C3%A3o-gon%C3%A7alves-40k/"
             >
               <img
                 class="link-icon"
@@ -29,7 +29,7 @@
             >
             <a
               class="curriculo"
-              href="https://docs.google.com/uc?export=download&id=1ofcqJCdikwnee2DFbGw6FL4kNdEkRj63"
+              href="https://docs.google.com/uc?export=download&id=1w39Wl51AuYJuX1It3SCWlnTGAlrLEame"
               download
             >
               <img

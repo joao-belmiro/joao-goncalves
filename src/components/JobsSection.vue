@@ -4,7 +4,7 @@
     <details :open="index === 0 ? true: false" v-for="(job, index) in jobs" :key="job.id">
         <summary>{{job.company}}</summary>
         <div class="detail-content">
-            <p><strong>{{job.rangeTime}}</strong></p>
+            <p><strong>{{job.rangeTime}} {{ diffMonths(job.initDate, job.endDate) }}</strong></p>
             <br>
             <p>{{job.type}} - <i>{{job.regim}}</i></p>
             <br>
@@ -30,7 +30,9 @@ export default {
           company: 'Compass.uol',
           regim: 'Clt',
           type: 'Desenvolvedor Front-end Pleno',
-          rangeTime: 'ago de 2021 - ainda atuando - 12 meses',
+          initDate: new Date('2021-08-09'),
+          endDate: new Date(Date.now()),
+          rangeTime: 'ago de 2021 - ainda atuando - ',
           description: 'Atuando como Front-end, fui alocado na vivo telefonica sendo responsável por desenvolver novas features para o simulador do e-commerce B2B da vivo, também era responsável pela correção de bugs, testes End to End, desenvolvimento de componentes reutilizáveis, decompor e estimar histórias vindas do backlog da sprint.',
           techs: [
             'Vue.js',
@@ -39,9 +41,28 @@ export default {
             'AEM (Adobe Experience Manager)',
             'HTML5',
             'SASS',
-            'Java 8',
+            'Java 8 , 11',
             'Api Rest',
             'Scrum'
+          ]
+        },
+        {
+          id: 4,
+          company: 'Operand',
+          regim: 'PJ',
+          type: 'Desenvolvedor Front-end Pleno',
+          initDate: new Date('2022-08-01'),
+          endDate: new Date('2023-01-01'),
+          rangeTime: 'ago de 2022 jan de 2023 - ',
+          description: 'Responsável por dar manutenção e impementar pequenas features no sistema legado de degetão de agências de publicidade, utlizando JavaScript, HTML5, SCSS',
+          techs: [
+            'Vue.js',
+            'javaScript',
+            'JQuery',
+            'Git (Gitlab)',
+            'HTML5',
+            'SCSS',
+            'Api Rest'
           ]
         },
         {
@@ -49,7 +70,9 @@ export default {
           company: 'PD Case informática Ltda.',
           regim: 'Clt',
           type: 'Desenvolvedor Full-stack',
-          rangeTime: 'out de 2020 - ago de 2021 · 11 meses',
+          initDate: new Date('2020-10-15'),
+          endDate: new Date('2021-08-19'),
+          rangeTime: 'out de 2020 - ago de 2021 - ',
           description: 'Desenvolvedor reponsável por criar novas aplicações com base nos padrões do Banco da Amazônia, utilizando a arquitetura de microsserviços desde o back-end até o front-end, atuei principalmente em dois sistemas. O primeiro foi Um sistema de renegociação de contratos, era um CRM que servia para gerar propostas de pagamentos de contratos de um determinado cliente do banco. Paralelo a esse sistema atuei em mais um CRM para a gestão de indicadores do banco ',
           techs: [
             'Vue.js',
@@ -69,7 +92,9 @@ export default {
           company: 'Banco da Amazônia SA.',
           regim: 'Contrato',
           type: 'Estágio',
-          rangeTime: 'mai de 2019 - out de 2020 - 1 ano 6 meses',
+          initDate: new Date('2019-05-02'),
+          endDate: new Date('2020-08-01'),
+          rangeTime: 'mai de 2019 - out de 2020 - ',
           description: 'Encarregado de adquirir conhecimento para exercer as atividades da empresa, sob orientação dos desenvolvedores do banco, atuei na correção de bugs, criação de novos cruds, mapeamentos de entidades no banco de dados e reuniões com coordenadorias clientes',
           techs: [
             'Java 8',
@@ -78,13 +103,21 @@ export default {
             'javaScript',
             'jQuery',
             'Git (Gitlab)',
-            'KnockoutJS',
+            'Knockout.JS',
             'HTML5',
             'CSS3',
             'Vue.js'
           ]
         }
       ]
+    }
+  },
+  methods: {
+    diffMonths (initDate, endDate) {
+      const diference = (endDate.getTime() - initDate.getTime()) / (1000 * 60 * 60 * 24 * 30.44)
+      const diffMonths = (Math.round(diference))
+      const intMonths = Math.floor(diffMonths / 12)
+      return diffMonths > 12 ? `${intMonths} ano${intMonths > 1 ? 's' : ''} e ${diffMonths % 12} meses` : `${diffMonths} meses`
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <section id="jobs" class="jobs-section">
-    <h1>Experiências profissionais</h1>
+    <h1>Experiência profissional</h1>
     <details :open="index === 0 ? true: false" v-for="(job, index) in jobs" :key="job.id">
         <summary>{{job.company}}</summary>
         <div class="detail-content">
@@ -143,6 +143,7 @@ export default {
         margin-bottom: 32px;
         font-size: 32px;
         @media (max-width: 999px) {
+          font-size: 21px;
         }
     }
 
@@ -186,6 +187,10 @@ export default {
             .description {
                 text-align: justify;
                 letter-spacing: 2px;
+                @media (max-width: 999px) {
+                  font-size: 12px;
+                  letter-spacing: 1px;
+                }
             }
 
             .techs-list {
@@ -209,6 +214,7 @@ export default {
         }
         width: 80%;
         margin-bottom: 32px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
         @media (max-width: 999px) {
             width: 100%;
         }

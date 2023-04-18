@@ -37,6 +37,9 @@ export default {}
         text-align: start;
         margin-bottom: 32px;
         font-size: 32px;
+        @media (max-width: 999px) {
+          font-size: 22px;
+        }
     }
     .course-name {
       font-size: 30px;

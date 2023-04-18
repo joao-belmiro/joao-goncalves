@@ -109,6 +109,9 @@ export default {
   }
   h1 {
     font-size: 32px;
+    @media (max-width: 999px) {
+        font-size: 22px;
+    }
   }
   .card-projects {
     width: 80%;
@@ -148,16 +151,20 @@ export default {
         opacity: 0.8;
         margin-bottom: 16px;
         line-height: 1.5em;
+        @media (max-width: 999px) {
+          font-size: 22px;
+        }
       }
 
       p {
         letter-spacing: 2px;
         margin-bottom: 32px;
         text-align: justify;
-         @media (max-width: 999px) {
-            letter-spacing: 1px;
-            text-align: none;
-         }
+        @media (max-width: 999px) {
+          font-size: 12px;
+          letter-spacing: 1px;
+          text-align: none;
+        }
       }
       .d-links {
         display: flex;
@@ -178,6 +185,9 @@ export default {
           border-radius: 6px;
         &:hover {
           opacity: 0.7;
+        }
+        @media (max-width: 999px) {
+          font-size: 10px;
         }
       }
     }

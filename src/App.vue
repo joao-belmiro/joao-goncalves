@@ -71,7 +71,10 @@ export default {
 <style lang="scss">
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 20vh;
+    scroll-padding-top: 36px;
+    @media (max-width: 999px) {
+      scroll-padding-top: 12vh;
+    }
 }
 * {
   margin: 0;

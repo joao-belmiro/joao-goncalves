@@ -2,6 +2,7 @@
   <section id="stacks" class="stacks-section">
     <div class="container">
       <h1>Tecnolgias Estudadas</h1>
+      <a href="https://www.figma.com/file/b6eE2L4Uqrg7fT5XfyHfKi/Tech-Stack-Icons-%26-Design-Stack-Icons-(Community)?node-id=19-1174&t=4R3ygYYxjPEzrfqe-0" target="_blank" rel="noopener noreferrer"> <strong>Referência dos Ícones </strong></a>
       <div class="line-scroll">
         <div class="cover">
           <div @mouseenter="enterList" class="list-stacks">
@@ -12,7 +13,7 @@
               class="tech-card"
             >
               <p>{{ stack.name }}</p>
-              <img :src="stack.img" :alt="stack.alt" />
+              <img :src="stack.img" :alt="stack.alt"  width="100" height="90"/>
             </div>
           </div>
         </div>
@@ -40,6 +41,36 @@ export default {
           img: require('@/assets/stacks/javaScript.svg'),
           alt: 'javaScript stack',
           name: 'javaScript'
+        },
+        {
+          img: require('@/assets/stacks/quasar.svg'),
+          alt: 'quasar framework',
+          name: 'Quasar Framework'
+        },
+        {
+          img: require('@/assets/stacks/java.svg'),
+          alt: 'java stack',
+          name: 'Java 11'
+        },
+        {
+          img: require('@/assets/stacks/spring.svg'),
+          alt: 'spring stack',
+          name: 'spring boot'
+        },
+        {
+          img: require('@/assets/stacks/bootstrap5.svg'),
+          alt: 'bootstrap5 stack',
+          name: 'Bootstrap 5'
+        },
+        {
+          img: require('@/assets/stacks/vuetify.svg'),
+          alt: 'vuetify',
+          name: 'vuetify'
+        },
+        {
+          img: require('@/assets/stacks/firebase.svg'),
+          alt: 'firebase stack',
+          name: 'firebase'
         },
         {
           img: require('@/assets/stacks/css.svg'),
@@ -163,6 +194,14 @@ export default {
       }
     }
 
+    a {
+      margin-left: 16px;
+      text-decoration: none;
+      color: $primary;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
     .line-scroll {
       display: flex;
       flex-direction: row;
@@ -253,9 +292,9 @@ export default {
             p {
               padding: 16px 0 10px 0;
               display: block;
+              text-align: center;
               position: relative;
-              line-height: 32px;
-              font-weight: 600;
+              font-weight: 500;
               opacity: 0;
             }
 

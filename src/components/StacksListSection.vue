@@ -1,7 +1,7 @@
 <template>
   <section id="stacks" class="stacks-section">
     <div class="container">
-      <h1>Tecnolgias Estudadas</h1>
+      <h1>Tecnolgias Trabalhadas</h1>
       <a href="https://www.figma.com/file/b6eE2L4Uqrg7fT5XfyHfKi/Tech-Stack-Icons-%26-Design-Stack-Icons-(Community)?node-id=19-1174&t=4R3ygYYxjPEzrfqe-0" target="_blank" rel="noopener noreferrer"> <strong>Referência dos Ícones </strong></a>
       <div class="line-scroll">
         <div class="cover">
@@ -36,6 +36,11 @@ export default {
           img: require('@/assets/stacks/vue.svg'),
           alt: 'vue stack',
           name: 'Vue.js'
+        },
+        {
+          img: require('@/assets/stacks/adobe.svg'),
+          alt: 'adobe',
+          name: 'Adobe'
         },
         {
           img: require('@/assets/stacks/javaScript.svg'),

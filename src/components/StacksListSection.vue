@@ -40,7 +40,7 @@ export default {
         {
           img: require('@/assets/stacks/adobe.svg'),
           alt: 'adobe',
-          name: 'Adobe'
+          name: 'Adobe experience Manager '
         },
         {
           img: require('@/assets/stacks/javaScript.svg'),

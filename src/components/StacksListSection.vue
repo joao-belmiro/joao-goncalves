@@ -256,7 +256,6 @@ export default {
         width: 100%;
 
         .list-stacks {
-          scroll-behavior: smooth;
           width: 100%;
           display: flex;
           flex-direction: row;

@@ -65,7 +65,9 @@
     justify-content: center;
     align-items: flex-start;
     column-gap: 64px;
-
+    color: $background;
+    background: $dark;
+    margin-bottom: 20px;
     @media (max-width: 900px) {
       flex-direction: column;
       row-gap: 32px;
@@ -73,7 +75,7 @@
     }
 
     @media (max-width: 999px) {
-        margin: 0px 16px;
+        padding: 16px;
     }
 
     .profile-data {
@@ -90,7 +92,7 @@
         row-gap: 16px;
 
         .github {
-          background: $dark;
+          background: $primary;
         }
         .linkedin {
           background: $secondary;
@@ -98,7 +100,7 @@
 
         .curriculo {
           width: 100%;
-          background: $primary;
+          background: $accent;
         }
 
         a {

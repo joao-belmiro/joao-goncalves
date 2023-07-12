@@ -1,11 +1,11 @@
 <template>
   <section id="projects" class="personal-projects">
     <h1 class="title">Projetos Pessoais</h1>
-
+    <div class="card-wrapper">
     <div v-for="project in projects" :key="project.id" class="card-projects">
-      <img :src="project.image" alt="" />
-      <div class="infos-container">
+    <div class="infos-container">
         <h1>{{ project.title }}</h1>
+        <hr>
         <p>{{ project.description }}</p>
         <div class="d-links">
           <a
@@ -25,6 +25,7 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
 </template>
 
@@ -34,8 +35,15 @@ export default {
     return {
       projects: [
         {
+          id: 6,
+          title: 'Docs Agile',
+          link: 'https://agile-docs.netlify.app/',
+          repo: 'https://github.com/joao-belmiro/agile-docfy',
+          description: 'Projeto criado com o para aprendermais sobre métodologias ágeis do mercado e exercitar o aprendizado com cursos novos, inplantando também a internacionalização e web scrapping',
+          techs: ['Vue.js 3', 'web scrapping', 'javaScript', 'Git', 'HTML5', 'SASS', 'vue-i18n']
+        },
+        {
           id: 5,
-          image: require('@/assets/photos/dash-crm.png'),
           title: 'Dashboard Crm',
           link: 'https://dash-crm.netlify.app/',
           repo: 'https://github.com/joao-belmiro/crm-admin',
@@ -45,7 +53,6 @@ export default {
         },
         {
           id: 4,
-          image: require('@/assets/photos/my-notes.png'),
           title: 'Minha Agenda',
           link: 'https://free-notes.netlify.app',
           repo: 'https://github.com/joao-belmiro/my-notes',
@@ -55,7 +62,6 @@ export default {
         },
         {
           id: 3,
-          image: require('@/assets/photos/crud-firebase.jpg'),
           title: 'Crud Vue e Firebase',
           link: 'https://crud-vue-firebase.netlify.app/',
           repo: 'https://github.com/joao-belmiro/frontend-test',
@@ -65,7 +71,6 @@ export default {
         },
         {
           id: 2,
-          image: require('@/assets/photos/fipe.jpg'),
           title: 'Seu Fipe',
           link: 'https://fipe-search.netlify.app/',
           repo: 'https://github.com/joao-belmiro/fipe-search',
@@ -74,7 +79,6 @@ export default {
           techs: ['Nuxt.js', 'HTML5', 'CSS3', 'javaScript', 'Axios']
         },
         {
-          image: require('@/assets/photos/letras.jpg'),
           id: 1,
           title: 'Buscador de Letras',
           link: 'https://joao-belmiro.github.io/lyrics-search/',
@@ -113,36 +117,31 @@ export default {
         font-size: 22px;
     }
   }
+  .card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 16px;
+  }
   .card-projects {
-    width: 80%;
+    width: 39.2%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     border-radius: 4px;
     border: 1px solid $dark;
+    height: 370px;
     box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 1);
+    margin-bottom: 16px;
     @media (max-width: 999px) {
       width: 100%;
       flex-direction: column;
-    }
-    img {
-      margin: 16px;
-      border-radius: 6px;
-      width: 35%;
-      height: 250px;
-      @media (max-width: 999px) {
-        border-radius: 4px 4px 0px 0px;
-        margin: 0;
-        height: 450px;
-        width: 100%;
-      }
-      @media (max-width: 768px) {
-        height: 300px;
-      }
+      height: auto;
     }
     .infos-container {
       padding: 16px;
-
       h1 {
         color: $primary;
         letter-spacing: 3px;
@@ -150,15 +149,15 @@ export default {
         font-weight: 700;
         opacity: 0.8;
         margin-bottom: 16px;
-        line-height: 1.5em;
+        line-height: 1em;
         @media (max-width: 999px) {
           font-size: 22px;
         }
       }
 
       p {
-        letter-spacing: 2px;
-        margin-bottom: 32px;
+        margin:16px 0;
+        font-size: 14px;
         text-align: justify;
         @media (max-width: 999px) {
           font-size: 12px;

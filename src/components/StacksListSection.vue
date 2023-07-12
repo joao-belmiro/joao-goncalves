@@ -2,7 +2,13 @@
   <section id="stacks" class="stacks-section">
     <div class="container">
       <h1>Tecnolgias Trabalhadas</h1>
-      <a href="https://www.figma.com/file/b6eE2L4Uqrg7fT5XfyHfKi/Tech-Stack-Icons-%26-Design-Stack-Icons-(Community)?node-id=19-1174&t=4R3ygYYxjPEzrfqe-0" target="_blank" rel="noopener noreferrer"> <strong>Referência dos Ícones </strong></a>
+      <a
+        href="https://www.figma.com/file/b6eE2L4Uqrg7fT5XfyHfKi/Tech-Stack-Icons-%26-Design-Stack-Icons-(Community)?node-id=19-1174&t=4R3ygYYxjPEzrfqe-0"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>Referência dos Ícones </strong></a
+      >
       <div class="line-scroll">
         <div class="cover">
           <div @mouseenter="enterList" class="list-stacks">
@@ -13,7 +19,7 @@
               class="tech-card"
             >
               <p>{{ stack.name }}</p>
-              <img :src="stack.img" :alt="stack.alt"  width="100" height="90"/>
+              <img :src="stack.img" :alt="stack.alt" width="100" height="90" />
             </div>
           </div>
         </div>
@@ -165,7 +171,7 @@ export default {
         if (!this.isDown) return
         e.preventDefault()
         const x = e.touches[0].pageX
-        const walk = (x - this.startX) * 2
+        const walk = (x - this.startX) * 1.5
         slider.scrollLeft += -walk
       })
     }
@@ -256,7 +262,6 @@ export default {
         width: 100%;
 
         .list-stacks {
-          scroll-behavior: smooth;
           width: 100%;
           display: flex;
           flex-direction: row;
@@ -265,7 +270,10 @@ export default {
           overflow: hidden;
           height: 250px;
           position: relative;
-
+          @media (max-width: 999px) {
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+          }
           .tech-card {
             object-fit: contain;
             position: relative;

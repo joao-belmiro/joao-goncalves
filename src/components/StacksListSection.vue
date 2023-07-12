@@ -59,6 +59,11 @@ export default {
           name: 'Quasar Framework'
         },
         {
+          img: require('@/assets/stacks/sass.svg'),
+          alt: 'sass stack',
+          name: 'SASS'
+        },
+        {
           img: require('@/assets/stacks/java.svg'),
           alt: 'java stack',
           name: 'Java 11'
@@ -87,11 +92,6 @@ export default {
           img: require('@/assets/stacks/css.svg'),
           alt: 'css stack',
           name: 'CSS3'
-        },
-        {
-          img: require('@/assets/stacks/sass.svg'),
-          alt: 'sass stack',
-          name: 'SASS'
         },
         {
           img: require('@/assets/stacks/html5.svg'),
@@ -170,8 +170,9 @@ export default {
       slider.addEventListener('touchmove', (e) => {
         if (!this.isDown) return
         e.preventDefault()
+        const multiplier = this.isMobile ? 0.1 : 2
         const x = e.touches[0].pageX
-        const walk = (x - this.startX) * 1.5
+        const walk = (x - this.startX) * multiplier
         slider.scrollLeft += -walk
       })
     }
@@ -309,6 +310,7 @@ export default {
               position: relative;
               font-weight: 500;
               opacity: 0;
+              line-height: 1.1rem;
             }
 
             &:hover p {

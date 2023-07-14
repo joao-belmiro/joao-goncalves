@@ -68,14 +68,18 @@
     color: $background;
     background: $dark;
     margin-bottom: 20px;
+    border-radius: 0 0 80px 80px;
     @media (max-width: 900px) {
       flex-direction: column;
       row-gap: 32px;
       align-items: center;
+      column-gap: 16px;
+
     }
 
     @media (max-width: 999px) {
         padding: 16px;
+        border-radius: 0 0 30px 30px;
     }
 
     .profile-data {
@@ -100,7 +104,7 @@
 
         .curriculo {
           width: 100%;
-          background: $accent;
+          background: $contrast;
         }
 
         a {
@@ -163,7 +167,13 @@
       p {
         text-align: justify;
         letter-spacing: 1px;
-
+        line-height: 2;
+        @media (max-width: 999px) {
+          line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+          line-height: 2;
+        }
         span {
           color: $primary;
         }

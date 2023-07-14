@@ -132,7 +132,7 @@ export default {
     align-items: flex-start;
     border-radius: 4px;
     border: 1px solid $dark;
-    height: 370px;
+    height: 335px;
     box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 1);
     margin-bottom: 16px;
     @media (max-width: 999px) {

@@ -170,7 +170,7 @@ export default {
       slider.addEventListener('touchmove', (e) => {
         if (!this.isDown) return
         e.preventDefault()
-        const multiplier = this.isMobile ? 0.1 : 2
+        const multiplier = this.isMobile ? 0.9 : 2
         const x = e.touches[0].pageX
         const walk = (x - this.startX) * multiplier
         slider.scrollLeft += -walk

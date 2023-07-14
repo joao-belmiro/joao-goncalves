@@ -33,7 +33,7 @@ export default {
           initDate: new Date('2021-08-09'),
           endDate: new Date(Date.now()),
           rangeTime: 'ago de 2021 - ainda atuando - ',
-          description: 'Atuando como Front-end, fui alocado na vivo telefonica sendo responsável por desenvolver novas features para o simulador do e-commerce B2B da vivo, também era responsável pela correção de bugs, testes End to End, desenvolvimento de componentes reutilizáveis, decompor e estimar histórias vindas do backlog da sprint.',
+          description: 'Atuando como Front-end, fui alocado na vivo telefonica sendo responsável por desenvolver novas features para o simulador de planos do e-commerce B2B da vivo, também fui alocado no time e-commerce da parte de equipamentos para migração, também era responsável pela correção de bugs, testes End to End, desenvolvimento de componentes reutilizáveis, decompor e estimar histórias vindas do backlog da sprint.',
           techs: [
             'Vue.js',
             'javaScript',

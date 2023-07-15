@@ -2,6 +2,7 @@
   <section id="apresentation" class="apresentation">
     <div class="profile-data">
       <img
+        class="profile-image"
         src="@/assets/photos/my-photo.webp"
         alt="minha foto"
         width="320"
@@ -144,6 +145,10 @@
         display: block;
         width: 48%;
       }
+    }
+    .profile-image {
+      border-radius: 50%;
+      border: 8px solid $primary;
     }
   }
   .apresentation-text {

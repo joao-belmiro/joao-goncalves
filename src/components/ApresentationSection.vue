@@ -64,7 +64,7 @@
         entanto com o desejo de sair da minha zona de conforto no final de 2019,
         decidi estudar java, pois era uma linguagem que seria usada na
         faculdade, esses estudos me levou da minha primeira vaga de estágio em
-        programação até onde estou <span>agora.</span>
+        programação até onde estou agora.
       </p>
     </div>
   </section>
@@ -180,9 +180,6 @@
       }
       @media (max-width: 768px) {
         line-height: 2;
-      }
-      span {
-        color: $primary;
       }
     }
   }

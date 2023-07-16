@@ -217,7 +217,7 @@ main {
 footer {
   background-color: #000000;
   text-align: center;
-  color: $background;
+  color: #fff;
 
   p {
 
@@ -229,7 +229,8 @@ footer {
 
     a {
       text-decoration: none;
-      color: $accent;
+      color: #854500;
+      font-weight: 600;
       &hover {
         opacity: 0.7;
       }

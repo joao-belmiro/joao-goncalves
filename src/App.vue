@@ -229,7 +229,7 @@ footer {
 
     a {
       text-decoration: none;
-      color: #854500;
+      color: $accent;
       font-weight: 600;
       &hover {
         opacity: 0.7;

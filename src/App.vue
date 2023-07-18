@@ -24,7 +24,7 @@
       <Formation-section/>
     </main>
     <footer>
-      <h4>
+      <p>
         © Todos os direitos reservados -
         <a
           href="https://github.com/joao-belmiro"
@@ -33,7 +33,7 @@
           >GitHub</a
         >
         João Carlos - 2022
-      </h4>
+      </p>
     </footer>
   </div>
 </template>
@@ -217,9 +217,9 @@ main {
 footer {
   background-color: #000000;
   text-align: center;
-  color: $background;
+  color: #fff;
 
-  h4 {
+  p {
 
     @media (max-width: 999px) {
       font-size: 11px;
@@ -230,6 +230,7 @@ footer {
     a {
       text-decoration: none;
       color: $accent;
+      font-weight: 600;
       &hover {
         opacity: 0.7;
       }

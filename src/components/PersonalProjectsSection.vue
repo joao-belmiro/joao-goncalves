@@ -131,9 +131,9 @@ export default {
     flex-direction: row;
     align-items: flex-start;
     border-radius: 4px;
-    border: 1px solid $dark;
+    border: 1px solid $grey-1;
     height: 335px;
-    box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 1);
+    box-shadow: 4px 4px 0px -1px rgba(153, 153, 153, .8);
     margin-bottom: 16px;
     @media (max-width: 999px) {
       width: 100%;

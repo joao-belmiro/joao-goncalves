@@ -282,7 +282,7 @@ export default {
             flex-direction: column;
             padding: 0px 32px 32px 32px;
             border-radius: 9px;
-            border: 2px solid $dark;
+            border: 1px solid $grey-2;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -300,7 +300,7 @@ export default {
             &:hover {
               transform: scale(1.1);
               cursor: pointer;
-              border: 2px solid $primary;
+              border: 1px solid $primary;
             }
 
             p {

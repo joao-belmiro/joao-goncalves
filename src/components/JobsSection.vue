@@ -40,12 +40,12 @@ export default {
           id: 3,
           company: 'Compass.uol',
           regim: 'Clt',
-          type: 'Desenvolvedor Front-end Pleno',
+          type: 'Desenvolvedor Pleno',
           initDate: new Date('2021-08-09'),
           endDate: new Date(Date.now()),
           rangeTime: 'ago de 2021 - ainda atuando - ',
           description:
-            'Atuando como Front-end, fui alocado na vivo telefonica sendo responsável por desenvolver novas features para o simulador de planos do e-commerce B2B da vivo, também fui alocado no time e-commerce da parte de equipamentos para migração, também era responsável pela correção de bugs, testes End to End, desenvolvimento de componentes reutilizáveis, decompor e estimar histórias vindas do backlog da sprint.',
+            'Atuando como Front-end, fui alocado na vivo telefonica sendo responsável por desenvolver novas features para o simulador de planos do e-commerce B2B da vivo, também fui alocado no time e-commerce da parte de equipamentos para migração e para uma squad dedicada a melhorar SEO dos produtos da vivo, também era responsável pela correção de bugs, testes End to End, desenvolvimento de componentes reutilizáveis, decompor e estimar histórias vindas do backlog da sprint.',
           techs: [
             'Vue.js',
             'javaScript',
@@ -67,7 +67,7 @@ export default {
           endDate: new Date('2023-01-01'),
           rangeTime: 'ago de 2022 jan de 2023 - ',
           description:
-            'Responsável por dar manutenção e impementar pequenas features no sistema legado de degetão de agências de publicidade, utlizando JavaScript, HTML5, SCSS',
+            'Responsável por dar manutenção e impementar pequenas features no sistema legado de de gestão de agências de publicidade, utlizando JavaScript, HTML5, SCSS e implementar pequenas features e resolver bugs em vue.js',
           techs: [
             'Vue.js',
             'javaScript',

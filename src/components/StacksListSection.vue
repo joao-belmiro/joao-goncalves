@@ -266,7 +266,7 @@ export default {
           width: 100%;
           display: flex;
           flex-direction: row;
-          column-gap: 48px;
+          column-gap: 38px;
           align-items: center;
           overflow: hidden;
           height: 250px;

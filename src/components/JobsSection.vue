@@ -45,7 +45,7 @@ export default {
           endDate: new Date(Date.now()),
           rangeTime: 'ago de 2021 - ainda atuando - ',
           description:
-            'Atuando como Front-end, fui alocado na vivo telefonica sendo responsável por desenvolver novas features para o simulador de planos do e-commerce B2B da vivo, também fui alocado no time e-commerce da parte de equipamentos para migração e para uma squad dedicada a melhorar SEO dos produtos da vivo, também era responsável pela correção de bugs, testes End to End, desenvolvimento de componentes reutilizáveis, decompor e estimar histórias vindas do backlog da sprint.',
+            'Trabalhando como Desenvolvedor AEM, fui designado à Vivo Telefônica, onde assumi a responsabilidade pelo desenvolvimento de novos recursos para o simulador de planos no comércio eletrônico B2B da Vivo. Além disso, fui alocado em frentes de e-commerce de equipamentos para migração e também participei de uma equipe dedicada à otimização do SEO dos produtos da Vivo. Minhas atribuições também englobaram a correção de erros, a realização de testes End to End, a criação de componentes reutilizáveis e a decomposição e estimativa das histórias provenientes do backlog da sprint.',
           techs: [
             'Vue.js',
             'javaScript',
@@ -60,7 +60,7 @@ export default {
         },
         {
           id: 4,
-          company: 'Operand',
+          company: 'Operand (freelancer)',
           regim: 'PJ',
           type: 'Desenvolvedor Front-end Pleno',
           initDate: new Date('2022-08-01'),

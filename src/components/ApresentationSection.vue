@@ -55,15 +55,15 @@
     </div>
     <div class="apresentation-text">
       <h1>Olá, meu nome é João Carlos Belmiro Gonçalves</h1>
-      <h2>Sou desenvolvedor Front-end</h2>
+      <h2>Sou desenvolvedor Pleno</h2>
       <h3>E gostaria de compartilhar minhas Experiências com vocês !</h3>
       <br />
       <p>
-        Comecei não gostando de programação devido as más Experiencias na
-        faculdade, bem como a desmotivação devido a problemas Pessoais, no
-        entanto com o desejo de sair da minha zona de conforto no final de 2019,
+        Comecei não gostando de programação devido as más Experiencias na na faculdade
+        , bem como a desmotivação devido a problemas como falta de dinheiro e perspectiva de futuro, devido as poucas oportunidades oferecidas pela instituição na época, no
+        entanto com o desejo de sair da minha zona de conforto no final de <b>2019</b>,
         decidi estudar java, pois era uma linguagem que seria usada na
-        faculdade, esses estudos me levou da minha primeira vaga de estágio em
+        faculdade, esses estudos <i>longos e chatos na época</i> me levaram da minha primeira vaga de estágio em
         programação até onde estou agora.
       </p>
     </div>

@@ -39,16 +39,16 @@ export default {
           title: 'Docs Agile',
           link: 'https://agile-docs.netlify.app/',
           repo: 'https://github.com/joao-belmiro/agile-docfy',
-          description: 'Projeto criado com o para aprendermais sobre métodologias ágeis do mercado e exercitar o aprendizado com cursos novos, inplantando também a internacionalização e web scrapping',
+          description: 'Projeto criado com o para aprendermais sobre métodologias ágeis do mercado e exercitar o aprendizado com cursos novos, inplantando também a internacionalização de idiomas com base na seleção no canto superior direito e web scrapping para buscar perfis do Medium que falam sobre o assunto de cada tema da aplicação ',
           techs: ['Vue.js 3', 'web scrapping', 'javaScript', 'Git', 'HTML5', 'SASS', 'vue-i18n']
         },
         {
           id: 5,
-          title: 'Dashboard Crm',
+          title: 'Showcase Crm',
           link: 'https://dash-crm.netlify.app/',
           repo: 'https://github.com/joao-belmiro/crm-admin',
           description:
-            'Dashboard com formulários e componentes autorais inspirados no material design, possui responsividade e menu lateral funcional',
+            'Dashboard com formulários e componentes autorais inspirados no material design, plugin de notificação criado por mim, tem responsividade, menu lateral funcional, este projeto tem o objetivo de reforçar os conhecimentos adquiridos ao longo do tempo',
           techs: ['Vue.js', 'javaScript', 'Git', 'HTML5', 'SASS']
         },
         {

@@ -37,7 +37,7 @@ export default {
     return {
       jobs: [
         {
-          id: 3,
+          id: 1,
           company: 'Compass.uol',
           regim: 'Clt',
           type: 'Desenvolvedor Pleno',
@@ -59,7 +59,24 @@ export default {
           ]
         },
         {
-          id: 4,
+          id: 2,
+          company: 'Isaneto Tecnologia (freelancer)',
+          regim: 'PJ',
+          type: 'Desenvolvedor Front-end Pleno',
+          initDate: new Date('2023-05-01'),
+          endDate: new Date(new Date('2023-09-01')),
+          rangeTime: 'mai de 2023 - out de 2023 - ',
+          description:
+            'Responsável por realizar a migração do front-end de 10 sistemas da versão do primefaces 4 para o primefaces 12 e sanitização dos sistemas removendo bibliotecas não usadas e estilos não usados',
+          techs: [
+            'javaScript',
+            'SVN',
+            'HTML5',
+            'CSS'
+          ]
+        },
+        {
+          id: 3,
           company: 'Operand (freelancer)',
           regim: 'PJ',
           type: 'Desenvolvedor Front-end Pleno',
@@ -79,7 +96,7 @@ export default {
           ]
         },
         {
-          id: 2,
+          id: 4,
           company: 'PD Case informática Ltda.',
           regim: 'Clt',
           type: 'Desenvolvedor Full-stack',
@@ -102,7 +119,7 @@ export default {
           ]
         },
         {
-          id: 1,
+          id: 5,
           company: 'Banco da Amazônia SA.',
           regim: 'Contrato',
           type: 'Estágio',
@@ -170,11 +187,11 @@ export default {
 
   details {
     border-radius: 8px;
+
     summary {
       font-weight: 600;
       position: relative;
       cursor: pointer;
-      border: 1px solid $grey-1;
       padding: 12px 0;
       list-style: none;
 
@@ -197,6 +214,8 @@ export default {
 
     &[open] summary {
       border-radius: 6px 6px 0 0;
+      border: 1px solid $grey-1;
+
     }
     &[open] .detail-content {
       padding: 24px 16px;

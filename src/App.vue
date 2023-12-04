@@ -7,7 +7,7 @@
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
-        <a class="logo" href="/"><span>/*</span> joão carlos <span>*/</span></a>
+        <a class="logo" href="/">joão carlos</a>
         <ul class="nav-list">
           <li><a @click="clickMenu" href="#apresentation">Sobre</a></li>
           <li><a @click="clickMenu" href="#jobs">Experiências</a></li>

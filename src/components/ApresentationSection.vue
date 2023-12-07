@@ -55,8 +55,7 @@
     </div>
     <div class="apresentation-text">
       <h1>Olá, meu nome é João Carlos Belmiro Gonçalves</h1>
-      <h2>Sou desenvolvedor Pleno</h2>
-      <h3>E gostaria de compartilhar minhas Experiências com vocês !</h3>
+      <h2>Sou desenvolvedor de software</h2>
       <br />
       <p>
         Comecei não gostando de programação devido as más Experiencias na na faculdade

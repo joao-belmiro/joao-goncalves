@@ -39,7 +39,7 @@ export default {
           title: 'Docs Agile',
           link: 'https://agile-docs.netlify.app/',
           repo: 'https://github.com/joao-belmiro/agile-docfy',
-          description: 'Projeto criado com o para aprendermais sobre métodologias ágeis do mercado e exercitar o aprendizado com cursos novos, inplantando também a internacionalização de idiomas com base na seleção no canto superior direito e web scrapping para buscar perfis do Medium que falam sobre o assunto de cada tema da aplicação ',
+          description: 'Projeto criado com o para aprender mais sobre métodologias ágeis do mercado e exercitar o aprendizado com cursos novos, implantando também a internacionalização de idiomas com base na seleção no canto superior direito e web scrapping para buscar perfis do Medium que falam sobre o assunto de cada tema da aplicação ',
           techs: ['Vue.js 3', 'web scrapping', 'javaScript', 'Git', 'HTML5', 'SASS', 'vue-i18n']
         },
         {

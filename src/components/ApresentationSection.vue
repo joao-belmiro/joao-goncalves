@@ -58,12 +58,8 @@
       <h2>Sou desenvolvedor de software</h2>
       <br />
       <p>
-        Comecei não gostando de programação devido as más Experiencias na na faculdade
-        , bem como a desmotivação devido a problemas como falta de dinheiro e perspectiva de futuro, devido as poucas oportunidades oferecidas pela instituição na época, no
-        entanto com o desejo de sair da minha zona de conforto no final de <b>2019</b>,
-        decidi estudar java, pois era uma linguagem que seria usada na
-        faculdade, esses estudos <i>longos e chatos na época</i> me levaram da minha primeira vaga de estágio em
-        programação até onde estou agora.
+        Com mais de 5 anos de experiência contribui para a construção de sistemas de backoffice, produtos de marketing e de telefonia
+        procuro sempre entregar o melhor atendendo as necessidade técnicas do projeto e funcionais para o négócio, gerando valor agregado as soluções que entrego constantemente.
       </p>
     </div>
   </section>
@@ -71,7 +67,7 @@
 
 <style lang="scss">
 .apresentation {
-  padding: 32px 0;
+  padding: 64px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
